@@ -9,10 +9,10 @@
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
     <!-- Bootstrap CSS -->
-    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+    <link href="static\bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+    <link href="static\style.css" rel="stylesheet">
 
     <title>Hamburg - iGEM 2023</title>
 
@@ -40,8 +40,7 @@
           <img max-width="100%" src="https://static.igem.wiki/teams/4669/wiki/design-elements/footer-wave-1.svg" alt="-" >
   </div> 
     
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
   <footer class="pt-5 pb-5 footer py-5 mt-0 bg-dark text-white">
 
 	<div class="container">
@@ -127,9 +126,7 @@
 			<a href="https://de.linkedin.com/company/igem-hamburg" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/linkedin-icon.png" height="40px" width="auto"></a> &emsp;
 			<a href="https://gitlab.igem.org/2023/hamburg" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/gitlab-logo.png" height="40px" width="auto" /></a> &emsp;
 			<a href="mailto:igem.hamburg@gmail.com" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/mail-logo.png" height="40px" width="auto"/></a>
-		</div>
-  
-			   
+		</div>		   
 	  </div>
 	  <hr>
 	  <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
@@ -141,6 +138,9 @@
 	  </div>
 	</div>
   </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 </body>
 
 
