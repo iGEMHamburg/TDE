@@ -40,31 +40,6 @@
           <img max-width="100%" src="https://static.igem.wiki/teams/4669/wiki/design-elements/footer-wave-1.svg" alt="-" >
   </div> 
     
-  <!-- Button from bottom to top-->
-    <div class="button-Up">
-        <img id="button-Up" src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo.svg" alt="" onclick="backToTop()" class="button-Up" style="margin-right: 5px;" height="50"/>
-    </div>
-    <script>
-        function backToTop() {
-            document.body.scrollTop = document.documentElement.scrollTop = 0
-        }
-        window.onscroll = function () {
-            let toTop = document.documentElement.scrollTop || document.body.scrollTop
-            if (toTop != 0) {
-                document.getElementById("button-Up").classList.remove("button-Up-off")
-                document.getElementById("button-Up").classList.add("button-Up-show")
-            }
-
-            else {
-                document.getElementById("button-Up").classList.remove("button-Up-show")
-                document.getElementById("button-Up").classList.add("button-Up-off")
-            }
-        }
-        document.getElementById("button-Up").addEventListener("mousemove", () => {
-            document.getElementById("button-Up").style.opacity = 1
-        })
-    </script>
-
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 </body>
@@ -74,7 +49,7 @@
 	<div class="container">
 	  <div class="row mb-4">
 		<div class="col-lg-7 col-xs-12">
-		  <h4 class="mb-3"> <a href="{{ url_for('pages', page='sponsors')}}">A huge thank you to our sponsors!</a></h4>
+		  <h4 class="mb-3">A huge thank you to our sponsors!</h4>
 		  <div class="sponsor-banner">
 			<div class="sponsor-images">
 			  <a href="https://www.uni-hamburg.de/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/uhh-logo.png" height="80px" width="auto"></a>
