@@ -1,4 +1,7 @@
-body { padding-top: 500px; }
+body { 
+    padding-top: 56px; 
+    font-size: 120%;
+    }
 .left-aligned { margin-left: auto; }
 .bg-dark {background-color: #2A4A7C !important;}
 .bg-tde {background-color: #9ec9ad !important;}
